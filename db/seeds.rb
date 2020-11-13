@@ -1,5 +1,8 @@
 require 'open-uri'
 
+puts "Destroy reviews"
+Review.destroy_all if Rails.env.development?
+
 puts "Destroy ingredients"
 Ingredient.destroy_all if Rails.env.development?
 

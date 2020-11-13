@@ -55,3 +55,8 @@
   <%= render "reviews/new", cocktail: @cocktail, review: @review %>
 
 </div>
+
+<div class="center">
+<%= cl_image_tag @cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+</div>
+
